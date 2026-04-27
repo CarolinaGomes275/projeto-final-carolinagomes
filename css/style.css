@@ -85,15 +85,44 @@ iframe, video {
 *** O SEU CÓDIGO COMEÇA DEPOIS DESTE COMENTÁRIO ***
 ***************************************************
 ***************************************************/
+
+/****************variables css*********************/
+:root {
+  --header-height: 3.5rem;
+
+  /**********colors********/
+  /*color mode HSL (hue, saturation, lightness)*/
+  --cor-primaria: rgb(247, 129, 2);
+  --cor-secundaria: rgb(9, 115, 1);
+  --background: rgb(255, 253, 245);
+  --cor-de-texto-fundo-claro: rgb(28, 28, 28);
+  --cor-de-texto-fundo-escuro: rgb(255, 255, 255);
+  --cor-de-links-rest: rgb(69, 252, 13);
+  --cor-de-links-hover: rgb(221, 255, 3);
+  --background-cor-de-botoes: rgb(9, 115, 1);
+  --cor-de-texto-botoes: rgb(255, 255, 255);
+  /********font and typography************/
+
+  /***********font weight************/
+  --font-regular: 400;
+  --font-semi-bold: 600;
+  --font-bold: 800;
+  /***************z index**************/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+/*****************estilos base************/
 body{
   font-size: 16px;
   font-family: "Inter", sans-serif;
+  background-color: var(--background)
 }
-/*******************************definição da tipografia mobile*************************/
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "montserrat", sans-serif;
 }
 
+/*******************************definição da tipografia mobile*************************/
 h1{
   font-size: 2.074rem;
   font-weight: 700;
